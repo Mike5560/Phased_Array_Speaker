@@ -1,0 +1,26 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Parametric_Testbench_behav xil_defaultlib.Parametric_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'dwe_in' [C:/USV6/USV6.srcs/sources_1/new/Parametric_Top.v:89]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'vp_in' [C:/USV6/USV6.srcs/sources_1/new/Parametric_Top.v:93]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'vn_in' [C:/USV6/USV6.srcs/sources_1/new/Parametric_Top.v:94]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PWM_Generator
+Compiling module unisims_ver.XADC(INIT_41=16'b010000010000111...
+Compiling module xil_defaultlib.xadc_wiz_0
+Compiling module xil_defaultlib.Transducer1
+Compiling module xil_defaultlib.Transducer2
+Compiling module xil_defaultlib.Transducer3
+Compiling module xil_defaultlib.Transducer4
+Compiling module xil_defaultlib.Transducer5
+Compiling module xil_defaultlib.Transducer6
+Compiling module xil_defaultlib.Parametric_Top
+Compiling module xil_defaultlib.Parametric_Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Parametric_Testbench_behav

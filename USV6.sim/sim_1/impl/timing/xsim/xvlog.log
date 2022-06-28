@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/USV6/USV6.sim/sim_1/impl/timing/xsim/Parametric_Testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_Generator
+INFO: [VRFC 10-311] analyzing module Parametric_Top
+INFO: [VRFC 10-311] analyzing module Transducer1
+INFO: [VRFC 10-311] analyzing module Transducer2
+INFO: [VRFC 10-311] analyzing module Transducer3
+INFO: [VRFC 10-311] analyzing module Transducer4
+INFO: [VRFC 10-311] analyzing module Transducer5
+INFO: [VRFC 10-311] analyzing module Transducer6
+INFO: [VRFC 10-311] analyzing module xadc_wiz_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Parametric_Testbench
+INFO: [VRFC 10-2458] undeclared symbol pio48, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:55]
+INFO: [VRFC 10-2458] undeclared symbol pio47, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:56]
+INFO: [VRFC 10-2458] undeclared symbol pio46, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:57]
+INFO: [VRFC 10-2458] undeclared symbol pio45, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:58]
+INFO: [VRFC 10-2458] undeclared symbol pio44, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:59]
+INFO: [VRFC 10-2458] undeclared symbol pio43, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:60]
+INFO: [VRFC 10-2458] undeclared symbol pio41, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:61]
+INFO: [VRFC 10-2458] undeclared symbol pio40, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:62]
+INFO: [VRFC 10-2458] undeclared symbol pio33, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:63]
+INFO: [VRFC 10-2458] undeclared symbol pio32, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:64]
+INFO: [VRFC 10-2458] undeclared symbol pio29, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:65]
+INFO: [VRFC 10-2458] undeclared symbol pio28, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:66]
+INFO: [VRFC 10-2458] undeclared symbol pio27, assumed default net type wire [C:/USV6/USV6.srcs/sim_1/new/Parametric_Testbench.v:67]

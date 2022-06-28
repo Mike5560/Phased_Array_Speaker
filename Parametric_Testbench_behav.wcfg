@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Parametric_Testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Parametric_Testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="59,993.787534 us"></ZoomStartTime>
+      <ZoomEndTime time="60,003.457535 us"></ZoomEndTime>
+      <Cursor1Time time="59,995.690820 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wave_markers>
+      <marker time="19682308760" label="" />
+      <marker time="19650313880" label="" />
+      <marker time="19618319000" label="" />
+      <marker time="7996012200" label="" />
+      <marker time="7972016040" label="" />
+   </wave_markers>
+   <wvobject fp_name="/Parametric_Testbench/sysclk" type="logic">
+      <obj_property name="ElementShortName">sysclk</obj_property>
+      <obj_property name="ObjectShortName">sysclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/Trans1_inst/r_delaycnt" type="array">
+      <obj_property name="ElementShortName">r_delaycnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_delaycnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/PWM_inst/w_PWM" type="logic">
+      <obj_property name="ElementShortName">w_PWM</obj_property>
+      <obj_property name="ObjectShortName">w_PWM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/Trans6_inst/r_mult_match" type="array">
+      <obj_property name="ElementShortName">r_mult_match[11:0]</obj_property>
+      <obj_property name="ObjectShortName">r_mult_match[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/Trans6_inst/r_rising_counter" type="array">
+      <obj_property name="ElementShortName">r_rising_counter[11:0]</obj_property>
+      <obj_property name="ObjectShortName">r_rising_counter[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio29" type="logic">
+      <obj_property name="ElementShortName">pio29</obj_property>
+      <obj_property name="ObjectShortName">pio29</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio28" type="logic">
+      <obj_property name="ElementShortName">pio28</obj_property>
+      <obj_property name="ObjectShortName">pio28</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio33" type="logic">
+      <obj_property name="ElementShortName">pio33</obj_property>
+      <obj_property name="ObjectShortName">pio33</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio32" type="logic">
+      <obj_property name="ElementShortName">pio32</obj_property>
+      <obj_property name="ObjectShortName">pio32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio41" type="logic">
+      <obj_property name="ElementShortName">pio41</obj_property>
+      <obj_property name="ObjectShortName">pio41</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio40" type="logic">
+      <obj_property name="ElementShortName">pio40</obj_property>
+      <obj_property name="ObjectShortName">pio40</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio44" type="logic">
+      <obj_property name="ElementShortName">pio44</obj_property>
+      <obj_property name="ObjectShortName">pio44</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio43" type="logic">
+      <obj_property name="ElementShortName">pio43</obj_property>
+      <obj_property name="ObjectShortName">pio43</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio46" type="logic">
+      <obj_property name="ElementShortName">pio46</obj_property>
+      <obj_property name="ObjectShortName">pio46</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio45" type="logic">
+      <obj_property name="ElementShortName">pio45</obj_property>
+      <obj_property name="ObjectShortName">pio45</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio48" type="logic">
+      <obj_property name="ElementShortName">pio48</obj_property>
+      <obj_property name="ObjectShortName">pio48</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio47" type="logic">
+      <obj_property name="ElementShortName">pio47</obj_property>
+      <obj_property name="ObjectShortName">pio47</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/pio27" type="logic">
+      <obj_property name="ElementShortName">pio27</obj_property>
+      <obj_property name="ObjectShortName">pio27</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/w_aud_ready" type="logic">
+      <obj_property name="ElementShortName">w_aud_ready</obj_property>
+      <obj_property name="ObjectShortName">w_aud_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/w_data_aud" type="array">
+      <obj_property name="ElementShortName">w_data_aud[11:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data_aud[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Parametric_Testbench/Top_inst/r_shifted_data_joy" type="array">
+      <obj_property name="ElementShortName">r_shifted_data_joy[11:0]</obj_property>
+      <obj_property name="ObjectShortName">r_shifted_data_joy[11:0]</obj_property>
+   </wvobject>
+</wave_config>

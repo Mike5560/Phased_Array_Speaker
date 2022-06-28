@@ -1,0 +1,206 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Tue Jun  7 16:50:28 2022
+| Host         : DESKTOP-1HK4S49 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Parametric_Top_control_sets_placed.rpt
+| Design       : Parametric_Top
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   128 |
+|    Minimum number of control sets                        |   128 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   519 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   128 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |   122 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             276 |          134 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              16 |            4 |
+| Yes          | No                    | No                     |             101 |           30 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1440 |          360 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |           Enable Signal          |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+----------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  sysclk_IBUF_BUFG |                                  | Trans1_inst/r_delaycnt[3]                     |                1 |              5 |         5.00 |
+|  sysclk_IBUF_BUFG | r_aud_ready                      |                                               |                3 |              9 |         3.00 |
+|  sysclk_IBUF_BUFG |                                  | PWM_inst/falling_period_old                   |                3 |             11 |         3.67 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter0    | Trans6_inst/r_rising_counter[0]_i_1__4_n_0    |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | r_shifted_data_joy[11]_i_1_n_0   |                                               |                4 |             12 |         3.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter0   | Trans6_inst/r_falling_counter[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter100 | Trans6_inst/r_falling_counter10[0]_i_1__4_n_0 |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter20  | Trans6_inst/r_falling_counter2[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter30  | Trans6_inst/r_falling_counter3[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter50  | Trans6_inst/r_falling_counter5[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter40  | Trans6_inst/r_falling_counter4[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter60  | Trans6_inst/r_falling_counter6[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter70  | Trans6_inst/r_falling_counter7[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter90  | Trans6_inst/r_falling_counter9[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_falling_counter80  | Trans6_inst/r_falling_counter8[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter100  | Trans6_inst/r_rising_counter10[0]_i_1__4_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter90   | Trans5_inst/r_rising_counter9[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter30   | Trans6_inst/r_rising_counter3[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter20   | Trans6_inst/r_rising_counter2[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter40   | Trans6_inst/r_rising_counter4[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter50   | Trans6_inst/r_rising_counter5[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter70   | Trans6_inst/r_rising_counter7[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter60   | Trans6_inst/r_rising_counter6[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter80   | Trans6_inst/r_rising_counter8[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans6_inst/r_rising_counter90   | Trans6_inst/r_rising_counter9[0]_i_1__4_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter20   | Trans5_inst/r_rising_counter2[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter30   | Trans5_inst/r_rising_counter3[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter40   | Trans5_inst/r_rising_counter4[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter50   | Trans5_inst/r_rising_counter5[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter60   | Trans5_inst/r_rising_counter6[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter70   | Trans5_inst/r_rising_counter7[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter80   | Trans5_inst/r_rising_counter8[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | ADC_inst/drdy_out                |                                               |                4 |             12 |         3.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter0    | Trans5_inst/r_rising_counter[0]_i_1__3_n_0    |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_rising_counter100  | Trans5_inst/r_rising_counter10[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter100 | Trans5_inst/r_falling_counter10[0]_i_1__3_n_0 |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter20  | Trans5_inst/r_falling_counter2[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter0   | Trans5_inst/r_falling_counter[0]_i_1__3_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter30  | Trans5_inst/r_falling_counter3[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter40  | Trans5_inst/r_falling_counter4[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter50  | Trans5_inst/r_falling_counter5[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter60  | Trans5_inst/r_falling_counter6[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter70  | Trans5_inst/r_falling_counter7[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter80  | Trans5_inst/r_falling_counter8[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans5_inst/r_falling_counter90  | Trans5_inst/r_falling_counter9[0]_i_1__3_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter60   | Trans1_inst/r_rising_counter6[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter70   | Trans1_inst/r_rising_counter7[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter80   | Trans1_inst/r_rising_counter8[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter90   | Trans1_inst/r_rising_counter9[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter40  | Trans1_inst/r_falling_counter4[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter50  | Trans1_inst/r_falling_counter5[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter70  | Trans1_inst/r_falling_counter7[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter60  | Trans1_inst/r_falling_counter6[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter80  | Trans1_inst/r_falling_counter8[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter90  | Trans1_inst/r_falling_counter9[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter0    | Trans1_inst/r_rising_counter[0]_i_1_n_0       |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter20   | Trans1_inst/r_rising_counter2[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter100  | Trans1_inst/r_rising_counter10[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter30   | Trans1_inst/r_rising_counter3[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter40   | Trans1_inst/r_rising_counter4[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_rising_counter50   | Trans1_inst/r_rising_counter5[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter100 | Trans4_inst/r_falling_counter10[0]_i_1__2_n_0 |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter20  | Trans4_inst/r_falling_counter2[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter0   | Trans4_inst/r_falling_counter[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter30  | Trans4_inst/r_falling_counter3[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter40  | Trans4_inst/r_falling_counter4[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter50  | Trans4_inst/r_falling_counter5[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter70  | Trans4_inst/r_falling_counter7[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter60  | Trans4_inst/r_falling_counter6[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter80  | Trans4_inst/r_falling_counter8[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_falling_counter90  | Trans4_inst/r_falling_counter9[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter0    | Trans4_inst/r_rising_counter[0]_i_1__2_n_0    |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter100  | Trans4_inst/r_rising_counter10[0]_i_1__2_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter20   | Trans4_inst/r_rising_counter2[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter30   | Trans4_inst/r_rising_counter3[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter40   | Trans4_inst/r_rising_counter4[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter50   | Trans4_inst/r_rising_counter5[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter60   | Trans4_inst/r_rising_counter6[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter70   | Trans4_inst/r_rising_counter7[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter80   | Trans4_inst/r_rising_counter8[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans4_inst/r_rising_counter90   | Trans4_inst/r_rising_counter9[0]_i_1__2_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter50  | Trans3_inst/r_falling_counter5[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter70  | Trans3_inst/r_falling_counter7[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter60  | Trans3_inst/r_falling_counter6[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter80  | Trans3_inst/r_falling_counter8[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter90  | Trans3_inst/r_falling_counter9[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter0    | Trans3_inst/r_rising_counter[0]_i_1__1_n_0    |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter100  | Trans3_inst/r_rising_counter10[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter20   | Trans3_inst/r_rising_counter2[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter30   | Trans3_inst/r_rising_counter3[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter40   | Trans3_inst/r_rising_counter4[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter50   | Trans3_inst/r_rising_counter5[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter60   | Trans3_inst/r_rising_counter6[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter70   | Trans3_inst/r_rising_counter7[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter80   | Trans3_inst/r_rising_counter8[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_rising_counter90   | Trans3_inst/r_rising_counter9[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter30  | Trans3_inst/r_falling_counter3[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter40  | Trans3_inst/r_falling_counter4[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter0   | Trans3_inst/r_falling_counter[0]_i_1__1_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter100 | Trans3_inst/r_falling_counter10[0]_i_1__1_n_0 |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans3_inst/r_falling_counter20  | Trans3_inst/r_falling_counter2[0]_i_1__1_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter100 | Trans1_inst/r_falling_counter10[0]_i_1_n_0    |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter0   | Trans1_inst/r_falling_counter[0]_i_1_n_0      |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter30  | Trans1_inst/r_falling_counter3[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans1_inst/r_falling_counter20  | Trans1_inst/r_falling_counter2[0]_i_1_n_0     |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter0   | Trans2_inst/r_falling_counter[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter100 | Trans2_inst/r_falling_counter10[0]_i_1__0_n_0 |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter20  | Trans2_inst/r_falling_counter2[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter30  | Trans2_inst/r_falling_counter3[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter40  | Trans2_inst/r_falling_counter4[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter50  | Trans2_inst/r_falling_counter5[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter60  | Trans2_inst/r_falling_counter6[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter70  | Trans2_inst/r_falling_counter7[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter80  | Trans2_inst/r_falling_counter8[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_falling_counter90  | Trans2_inst/r_falling_counter9[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter0    | Trans2_inst/r_rising_counter[0]_i_1__0_n_0    |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter100  | Trans2_inst/r_rising_counter10[0]_i_1__0_n_0  |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter20   | Trans2_inst/r_rising_counter2[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter30   | Trans2_inst/r_rising_counter3[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter40   | Trans2_inst/r_rising_counter4[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter50   | Trans2_inst/r_rising_counter5[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter60   | Trans2_inst/r_rising_counter6[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter70   | Trans2_inst/r_rising_counter7[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter90   | Trans2_inst/r_rising_counter9[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | Trans2_inst/r_rising_counter80   | Trans2_inst/r_rising_counter8[0]_i_1__0_n_0   |                3 |             12 |         4.00 |
+|  sysclk_IBUF_BUFG | PWM_inst/falling_period_old      |                                               |                4 |             17 |         4.25 |
+|  sysclk_IBUF_BUFG | PWM_inst/r_aud_ready             |                                               |               15 |             51 |         3.40 |
+|  sysclk_IBUF_BUFG |                                  |                                               |              134 |            278 |         2.07 |
++-------------------+----------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+
